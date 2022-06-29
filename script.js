@@ -46,5 +46,6 @@ againBtm.addEventListener("click", function () {
   numberEl.textContent = "?";
   document.querySelector(".guess").value = "";
   document.querySelector(".number").style.width = "15rem";
-  document.querySelector("body").style.backgroundColor = "222";
+  document.querySelector("body").style.backgroundColor = "#222";
+  // bacbackgroundColor = "#222";
 });
