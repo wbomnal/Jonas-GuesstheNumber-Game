@@ -34,13 +34,23 @@ checkBtn.addEventListener("click", function () {
       document.querySelector(".highscore").textContent = highscore;
     }
   } else if (guessEl < guessNumber) {
-    messageEl.textContent = "Litlle low ";
-    score--;
-    scoreEl.textContent = score;
+    if (score > 1) {
+      messageEl.textContent = "Litlle low ";
+      score--;
+      scoreEl.textContent = score;
+    } else {
+      messageEl.textContent = "you lost! ";
+      scoreEl.textContent = 0;
+    }
   } else if (guessEl > guessNumber) {
-    messageEl.textContent = "Little high";
-    score--;
-    scoreEl.textContent = score;
+    if (score > 1) {
+      messageEl.textContent = "Little high";
+      score--;
+      scoreEl.textContent = score;
+    } else {
+      messageEl.textContent = "you lost! ";
+      scoreEl.textContent = 0;
+    }
   }
 });
 
@@ -53,5 +63,4 @@ againBtm.addEventListener("click", function () {
   document.querySelector(".guess").value = "";
   document.querySelector(".number").style.width = "15rem";
   document.querySelector("body").style.backgroundColor = "#222";
-  // bacbackgroundColor = "#222";
 });
