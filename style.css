@@ -71,7 +71,7 @@ h1 {
 }
 
 .between {
-  font-size: 1.4rem;
+  font-size: 1 rem;
   position: absolute;
   top: 2rem;
   right: 2rem;
@@ -113,6 +113,7 @@ h1 {
 .message {
   margin-bottom: 8rem;
   height: 3rem;
+  text-align: center;
 }
 
 .label-score {
